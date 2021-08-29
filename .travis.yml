@@ -1,22 +1,13 @@
-# Linguagem Utilizada para Desenvolver a Aplicação
 language: python
-
-# Versão que a aplicação suporta.
 python:
-  - "3.7"
-
-# Faz a instalação com Sudo, para ter privilégio de Super Usuário.
+- '3.7'
 sudo: required
-
-# Instalação de Módulos que são necessários para a Aplicação.
 install:
-  - pip install flask
-
-# Defini o script de Teste que deve rodar toda vez que o código for alterado.
+- pip install flask
 script:
-  - python test.py
-
-# Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
+- python test.py
 deploy:
   provider: heroku
-  app: mudar_para_o_nome_de_sua_app_no_heroku
+  app: datarimasdevops
+  api_key:
+    secure: qXUFrhvI0WsAhdWR3kGcU0zkigsqpiq8uf0n8r1fm2XYshMrkwS4RxXXsMSJ7knAvAQZDFEB7c7cncKevOD19J3pheA86J6iDiZsEUyTbWL4Gq5FXkhCA8u07euoOeSjvE5TrfArhoaWtCa/ne2PAISRXq+xURLobAcxJlEbDc70Vyi3nHF5A90jwcE1Q/a/V3j4f5dkdGPxRpoY60r9oTImISyf7rrzMqlZHkm+JE5HaGmnQXYT9SSp7UpfuFFOmcNrROVE4XugDMkbuWagpzcG9SMZjyl2CS8hSrpAF8P5LR9WGEGUszVYg9t4bXvrcKhW4tJMZ+BJ35ydJu7dgVvAfvRNCegcXeuC6g/bnZWCTJSLK5wdB6sjinhkOUV8l5PG5gMe/AFma0M8CjT0qmBosNdIfrCY74Ld1CrXBQEjiMgVtHHumJOVliCOjdqyCVgCKda2HaSm6QiakWfFoBowpSUuIwORyn8jdRoqfxBL15gDWRmzv71/ocMyF9nPtC8C+nBjeYuxDKojlizhKooSbClZBRMQsznQwivKBxl8FRYWk0Jj+pLQW98HypeJ749dhLKVmaT+HGdJCK5yV15DstDFvYNjoUyi9lqS92LQzvkVRKfYTBA1s8PVt2FF5tzdCV5rIaMnJsC+M9oiSmvFujAmJDwCgu/ujEmYQgI=
